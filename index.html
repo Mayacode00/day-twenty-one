@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/06302cc7fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Challenge Day20</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="blurr-bkgrd">
+        <h1 class="header">Let's Play Game</h1>
+        <p class="note">
+          This game is called "The Roshambo", commonly known as Rock Paper
+          Scissors
+        </p>
+        <div class="container">
+          <h4 class="header-two">Can you beat the Computer?</h4>
+          <p>Start the Game</p>
+          <input type="text" class="username" placeholder="input your username">
+          <div class="scoreboard">
+            <p class="player">You <span class="score-one"></span></p>
+            <p class="dashed">--</p>
+            <p class="computer"><span class="score-two"></span> Comp.</p>
+          </div>
+          <div class="gestures">
+            <button onclick="checker('rock')"><i class="far fa-hand-rock"></i></button>
+            <button onclick="checker('paper')"><i class="far fa-hand-paper"></i></button>
+            <button onclick="checker('scissors')"><i class="far fa-hand-scissors"></i></button>
+          </div>
+          <input type="submit" value="Start Game" class="start"></input>
+        </div>
+        <p class="user-choice"></p>
+        <p class="comp-choice"></p>
+        <p class="result"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
