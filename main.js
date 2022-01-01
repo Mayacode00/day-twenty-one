@@ -26,6 +26,9 @@ document
     event.preventDefault();
     document.querySelector(".score-one").innerHTML = 0;
     document.querySelector(".score-two").innerHTML = 0;
+    result.innerHTML = " ";
+    document.querySelector(".comp-choice").innerHTML = " ";
+    document.querySelector(".user-choice").innerHTML = " ";
     userScore = 0;
     play = 0;
     let userName = user.value;
@@ -49,7 +52,7 @@ function checker(input) {
     case "win":
       result.style.cssText =
         "background: #cefdce; color: #689f38; padding: 10px; width: 150px;; margin: 10px auto";
-      result.innerHTML = `${userName}`  + '' + "Wins";
+      result.innerHTML = `${userName}` + " " + "Wins";
       userScore++;
       break;
     case "lose":
@@ -70,11 +73,10 @@ function checker(input) {
     alert("Please Enter a Username");
     document.querySelector(".score-one").innerHTML = 0;
     document.querySelector(".score-two").innerHTML = 0;
-    result.innerHTML = "";
-    document.querySelector(".comp-choice").innerHTML = "";
-    document.querySelector(".user-choice").innerHTML = "";
+    result.innerHTML = " ";
+    document.querySelector(".comp-choice").innerHTML = " ";
+    document.querySelector(".user-choice").innerHTML = " ";
   } else {
-    start();
     play++;
   }
   if (play === 10) {
